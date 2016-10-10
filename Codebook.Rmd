@@ -1,0 +1,108 @@
+---
+title: "Codebook for final_data_set.txt"
+author: "Ewerton Monti"
+date: "7 de outubro de 2016"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+## Introduction
+This codebook contains the descriptions of the variables included in the data set called "final_data_set.txt", produced with the run_analysis.R script. See README.Rmd for further details on how this data set was constructed.  
+
+None of the measurements variables from the original data set was modified. This data set presents a selection of the original measurements - those containing means or standard deviations - and variables to identify the subjects and the activities they did. 
+
+
+## Codebook
+Variable name  |  	Description  |  	Unit
+------------- | ------------- | ------------- 
+activityName  |  	Name of the activy executed by the subject. Can assume the values WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING.  |  	Text (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)
+activityCode  |  	Code of the activy executed by the subject. 1 = WALKING, 2 = WALKING_UPSTAIRS, 3 = WALKING_DOWNSTAIRS, 4 = SITTING, 5 = STANDING, 6 = LAYING.  |  	Numbers (1 to 6)
+subject  |  	Identifier of the 30 subjects.  |  	Numbers (1 to 30)
+tBodyAcc-mean()-X  |  	Mean of the body signal captured by the accelerometer on the X-axis, time domain  |  	Triaxial acceleration normalized and bounded within [-1,1]
+tBodyAcc-mean()-Y  |  	Mean of the body signal captured by the accelerometer on the Y-axis, time domain  |  	Triaxial acceleration normalized and bounded within [-1,1]
+tBodyAcc-mean()-Z  |  	Mean of the body signal captured by the accelerometer on the Z-axis, time domain  |  	Triaxial acceleration normalized and bounded within [-1,1]
+tBodyAcc-std()-X  |  	Standard deviation of the body signal captured by the accelerometer on the X-axis, time domain  |  	Triaxial acceleration normalized and bounded within [-1,1]
+tBodyAcc-std()-Y  |  	Standard deviation of the body signal captured by the accelerometer on the Y-axis, time domain  |  	Triaxial acceleration normalized and bounded within [-1,1]
+tBodyAcc-std()-Z  |  	Standard deviation of the body signal captured by the accelerometer on the Z-axis, time domain  |  	Triaxial acceleration normalized and bounded within [-1,1]
+tGravityAcc-mean()-X  |  	Mean of the gravity signal captured by the accelerometer for the X-axis, time domain  |  	Triaxial acceleration normalized and bounded within [-1,1]
+tGravityAcc-mean()-Y  |  	Mean of the gravity signal captured by the accelerometer for the Y-axis, time domain  |  	Triaxial acceleration normalized and bounded within [-1,1]
+tGravityAcc-mean()-Z  |  	Mean of the gravity signal captured by the accelerometer for the Z-axis, time domain  |  	Triaxial acceleration normalized and bounded within [-1,1]
+tGravityAcc-std()-X  |  	Standard deviation of the gravity signal captured by the accelerometer for the X-axis, time domain  |  	Triaxial acceleration normalized and bounded within [-1,1]
+tGravityAcc-std()-Y  |  	Standard deviation of the gravity signal captured by the accelerometer for the Y-axis, time domain  |  	Triaxial acceleration normalized and bounded within [-1,1]
+tGravityAcc-std()-Z  |  	Standard deviation of the gravity signal captured by the accelerometer for the Z-axis, time domain  |  	Triaxial acceleration normalized and bounded within [-1,1]
+tBodyAccJerk-mean()-X  |  	Mean of the Jerk signal calculated usign the body linear acceleration and angular velocity captured by the accelerometer for the X-axis, time domain  |  	Triaxial acceleration normalized and bounded within [-1,1]
+tBodyAccJerk-mean()-Y  |  	Mean of the Jerk signal calculated usign the body linear acceleration and angular velocity captured by the accelerometer for the Y-axis, time domain  |  	Triaxial acceleration normalized and bounded within [-1,1]
+tBodyAccJerk-mean()-Z  |  	Mean of the Jerk signal calculated usign the body linear acceleration and angular velocity captured by the accelerometer for the Z-axis, time domain  |  	Triaxial acceleration normalized and bounded within [-1,1]
+tBodyAccJerk-std()-X  |  	Standard deviation of the Jerk signal calculated usign the body linear acceleration and angular velocity captured by the accelerometer for the X-axis, time domain  |  	Triaxial acceleration normalized and bounded within [-1,1]
+tBodyAccJerk-std()-Y  |  	Standard deviation of the Jerk signal calculated usign the body linear acceleration and angular velocity captured by the accelerometer for the Y-axis, time domain  |  	Triaxial acceleration normalized and bounded within [-1,1]
+tBodyAccJerk-std()-Z  |  	Standard deviation of the Jerk signal calculated usign the body linear acceleration and angular velocity captured by the accelerometer for the Z-axis, time domain  |  	Triaxial acceleration normalized and bounded within [-1,1]
+tBodyGyro-mean()-X  |  	Mean of the body signal captured by the gyroscope on the X-axis, time domain  |  	Triaxial angular velocity normalized and bounded within [-1,1]
+tBodyGyro-mean()-Y  |  	Mean of the body signal captured by the gyroscope on the Y-axis, time domain  |  	Triaxial angular velocity normalized and bounded within [-1,1]
+tBodyGyro-mean()-Z  |  	Mean of the body signal captured by the gyroscope on the Z-axis, time domain  |  	Triaxial angular velocity normalized and bounded within [-1,1]
+tBodyGyro-std()-X  |  	Standard deviation of the body signal captured by the gyroscope on the X-axis, time domain  |  	Triaxial angular velocity normalized and bounded within [-1,1]
+tBodyGyro-std()-Y  |  	Standard deviation of the body signal captured by the gyroscope on the Y-axis, time domain  |  	Triaxial angular velocity normalized and bounded within [-1,1]
+tBodyGyro-std()-Z  |  	Standard deviation of the body signal captured by the gyroscope on the Z-axis, time domain  |  	Triaxial angular velocity normalized and bounded within [-1,1]
+tBodyGyroJerk-mean()-X  |  	Mean of the Jerk signal calculated usign the body linear acceleration and angular velocity captured by the gyroscope for the X-axis, time domain  |  	Triaxial angular velocity normalized and bounded within [-1,1]
+tBodyGyroJerk-mean()-Y  |  	Mean of the Jerk signal calculated usign the body linear acceleration and angular velocity captured by the gyroscope for the Y-axis, time domain  |  	Triaxial angular velocity normalized and bounded within [-1,1]
+tBodyGyroJerk-mean()-Z  |  	Mean of the Jerk signal calculated usign the body linear acceleration and angular velocity captured by the gyroscope for the Z-axis, time domain  |  	Triaxial angular velocity normalized and bounded within [-1,1]
+tBodyGyroJerk-std()-X  |  	Standard deviation of the Jerk signal calculated usign the body linear acceleration and angular velocity captured by the gyroscope for the X-axis, time domain  |  	Triaxial angular velocity normalized and bounded within [-1,1]
+tBodyGyroJerk-std()-Y  |  	Standard deviation of the Jerk signal calculated usign the body linear acceleration and angular velocity captured by the gyroscope for the Y-axis, time domain  |  	Triaxial angular velocity normalized and bounded within [-1,1]
+tBodyGyroJerk-std()-Z  |  	Standard deviation of the Jerk signal calculated usign the body linear acceleration and angular velocity captured by the gyroscope for the Z-axis, time domain  |  	Triaxial angular velocity normalized and bounded within [-1,1]
+tBodyAccMag-mean()  |  	Mean of the magnitude of the three-dimensional signals calculated using the Euclidean norm for the body signal captured by the accelerometer, time domain  |  	Triaxial acceleration normalized and bounded within [-1,1]
+tBodyAccMag-std()  |  	Standard deviation of the magnitude of the three-dimensional signals calculated using the Euclidean norm for the body signal captured by the accelerometer, time domain  |  	Triaxial acceleration normalized and bounded within [-1,1]
+tGravityAccMag-mean()  |  	Mean of the magnitude of the three-dimensional signals calculated using the Euclidean norm for the gravity signal captured by the accelerometer, time domain  |  	Triaxial acceleration normalized and bounded within [-1,1]
+tGravityAccMag-std()  |  	Standard deviation of the magnitude of the three-dimensional signals calculated using the Euclidean norm for the gravity signal captured by the accelerometer, time domain  |  	Triaxial acceleration normalized and bounded within [-1,1]
+tBodyAccJerkMag-mean()  |  	Mean of the magnitude of the three-dimensional signals calculated using the Euclidean norm for the Jerk signal calculated usign the body linear acceleration and angular velocity captured by the accelerometer, time domain  |  	Triaxial acceleration normalized and bounded within [-1,1]
+tBodyAccJerkMag-std()  |  	Standard deviation of the magnitude of the three-dimensional signals calculated using the Euclidean norm for the Jerk signal calculated usign the body linear acceleration and angular velocity captured by the accelerometer, time domain  |  	Triaxial acceleration normalized and bounded within [-1,1]
+tBodyGyroMag-mean()  |  	Mean of the magnitude of the three-dimensional signals calculated using the Euclidean norm for the body signal captured by the gyroscope, time domain  |  	Triaxial angular velocity normalized and bounded within [-1,1]
+tBodyGyroMag-std()  |  	Standard deviation of the magnitude of the three-dimensional signals calculated using the Euclidean norm for the body signal captured by the gyroscope, time domain  |  	Triaxial angular velocity normalized and bounded within [-1,1]
+tBodyGyroJerkMag-mean()  |  	Mean of the magnitude of the three-dimensional signals calculated using the Euclidean norm for the Jerk signal calculated usign the body linear acceleration and angular velocity captured by the gyroscope, time domain  |  	Triaxial angular velocity normalized and bounded within [-1,1]
+tBodyGyroJerkMag-std()  |  	Standard deviation of the magnitude of the three-dimensional signals calculated using the Euclidean norm for the Jerk signal calculated usign the body linear acceleration and angular velocity captured by the gyroscope, time domain  |  	Triaxial angular velocity normalized and bounded within [-1,1]
+fBodyAcc-mean()-X  |  	Mean of the body signal captured by the accelerometer on the X-axis, frequency domain  |  	Triaxial acceleration normalized and bounded within [-1,1]
+fBodyAcc-mean()-Y  |  	Mean of the body signal captured by the accelerometer on the Y-axis, frequency domain  |  	Triaxial acceleration normalized and bounded within [-1,1]
+fBodyAcc-mean()-Z  |  	Mean of the body signal captured by the accelerometer on the Z-axis, frequency domain  |  	Triaxial acceleration normalized and bounded within [-1,1]
+fBodyAcc-std()-X  |  	Standard deviation of the body signal captured by the accelerometer on the X-axis, frequency domain  |  	Triaxial acceleration normalized and bounded within [-1,1]
+fBodyAcc-std()-Y  |  	Standard deviation of the body signal captured by the accelerometer on the Y-axis, frequency domain  |  	Triaxial acceleration normalized and bounded within [-1,1]
+fBodyAcc-std()-Z  |  	Standard deviation of the body signal captured by the accelerometer on the Z-axis, frequency domain  |  	Triaxial acceleration normalized and bounded within [-1,1]
+fBodyAcc-meanFreq()-X  |  	Weighted average of the frequency components to obtain a mean frequency of the body signal captured by the accelerometer on the X-axis, frequency domain  |  	Triaxial acceleration normalized and bounded within [-1,1]
+fBodyAcc-meanFreq()-Y  |  	Weighted average of the frequency components to obtain a mean frequency of the body signal captured by the accelerometer on the Y-axis, frequency domain  |  	Triaxial acceleration normalized and bounded within [-1,1]
+fBodyAcc-meanFreq()-Z  |  	Weighted average of the frequency components to obtain a mean frequency of the body signal captured by the accelerometer on the Z-axis, frequency domain  |  	Triaxial acceleration normalized and bounded within [-1,1]
+fBodyAccJerk-mean()-X  |  	Mean of the Jerk signal calculated usign the body linear acceleration and angular velocity captured by the accelerometer for the X-axis, frequency domain  |  	Triaxial acceleration normalized and bounded within [-1,1]
+fBodyAccJerk-mean()-Y  |  	Mean of the Jerk signal calculated usign the body linear acceleration and angular velocity captured by the accelerometer for the Y-axis, frequency domain  |  	Triaxial acceleration normalized and bounded within [-1,1]
+fBodyAccJerk-mean()-Z  |  	Mean of the Jerk signal calculated usign the body linear acceleration and angular velocity captured by the accelerometer for the Z-axis, frequency domain  |  	Triaxial acceleration normalized and bounded within [-1,1]
+fBodyAccJerk-std()-X  |  	Standard deviation of the Jerk signal calculated usign the body linear acceleration and angular velocity captured by the accelerometer for the X-axis, frequency domain  |  	Triaxial acceleration normalized and bounded within [-1,1]
+fBodyAccJerk-std()-Y  |  	Standard deviation of the Jerk signal calculated usign the body linear acceleration and angular velocity captured by the accelerometer for the Y-axis, frequency domain  |  	Triaxial acceleration normalized and bounded within [-1,1]
+fBodyAccJerk-std()-Z  |  	Standard deviation of the Jerk signal calculated usign the body linear acceleration and angular velocity captured by the accelerometer for the Z-axis, frequency domain  |  	Triaxial acceleration normalized and bounded within [-1,1]
+fBodyAccJerk-meanFreq()-X  |  	Weighted average of the frequency components to obtain a mean frequency of the Jerk signal calculated usign the body linear acceleration and angular velocity captured by the accelerometer for the X-axis, frequency domain  |  	Triaxial acceleration normalized and bounded within [-1,1]
+fBodyAccJerk-meanFreq()-Y  |  	Weighted average of the frequency components to obtain a mean frequency of the Jerk signal calculated usign the body linear acceleration and angular velocity captured by the accelerometer for the Y-axis, frequency domai  |  	Triaxial acceleration normalized and bounded within [-1,1]
+fBodyAccJerk-meanFreq()-Z  |  	Weighted average of the frequency components to obtain a mean frequency of the Jerk signal calculated usign the body linear acceleration and angular velocity captured by the accelerometer for the Z-axis, frequency domain  |  	Triaxial acceleration normalized and bounded within [-1,1]
+fBodyGyro-mean()-X  |  	Mean of the body signal captured by the gyroscope on the X-axis, frequency domain  |  	Triaxial angular velocity normalized and bounded within [-1,1]
+fBodyGyro-mean()-Y  |  	Mean of the body signal captured by the gyroscope on the Y-axis, frequency domain  |  	Triaxial angular velocity normalized and bounded within [-1,1]
+fBodyGyro-mean()-Z  |  	Mean of the body signal captured by the gyroscope on the Z-axis, frequency domain  |  	Triaxial angular velocity normalized and bounded within [-1,1]
+fBodyGyro-std()-X  |  	Standard deviation of the body signal captured by the gyroscope on the X-axis, frequency domain  |  	Triaxial angular velocity normalized and bounded within [-1,1]
+fBodyGyro-std()-Y  |  	Standard deviation of the body signal captured by the gyroscope on the Y-axis, frequency domain  |  	Triaxial angular velocity normalized and bounded within [-1,1]
+fBodyGyro-std()-Z  |  	Standard deviation of the body signal captured by the gyroscope on the Z-axis, frequency domain  |  	Triaxial angular velocity normalized and bounded within [-1,1]
+fBodyGyro-meanFreq()-X  |  	Weighted average of the frequency components to obtain a mean frequency of the body signal captured by the gyroscope on the X-axis, frequency domain  |  	Triaxial angular velocity normalized and bounded within [-1,1]
+fBodyGyro-meanFreq()-Y  |  	Weighted average of the frequency components to obtain a mean frequency of the body signal captured by the gyroscope on the Y-axis, frequency domain  |  	Triaxial angular velocity normalized and bounded within [-1,1]
+fBodyGyro-meanFreq()-Z  |  	Weighted average of the frequency components to obtain a mean frequency of the body signal captured by the gyroscope on the Z-axis, frequency domain  |  	Triaxial angular velocity normalized and bounded within [-1,1]
+fBodyAccMag-mean()  |  	Mean of the magnitude of the three-dimensional signals calculated using the Euclidean norm for the body signal captured by the accelerometer, frequency domain  |  	Triaxial acceleration normalized and bounded within [-1,1]
+fBodyAccMag-std()  |  	Standard deviation of the magnitude of the three-dimensional signals calculated using the Euclidean norm for the body signal captured by the accelerometer, frequency domain  |  	Triaxial acceleration normalized and bounded within [-1,1]
+fBodyAccMag-meanFreq()  |  	Weighted average of the frequency components to obtain a mean frequency of the magnitude of the three-dimensional signals calculated using the Euclidean norm for the body signal captured by the accelerometer, frequency domain  |  	Triaxial acceleration normalized and bounded within [-1,1]
+fBodyBodyAccJerkMag-mean()  |  	Mean of the magnitude of the three-dimensional signals calculated using the Euclidean norm for the Jerk signal calculated usign the body linear acceleration and angular velocity captured by the accelerometer, frequency domain  |  	Triaxial acceleration normalized and bounded within [-1,1]
+fBodyBodyAccJerkMag-std()  |  	#REF!	Triaxial acceleration normalized and bounded within [-1,1]
+fBodyBodyAccJerkMag-meanFreq()  |  	Standard deviation of the magnitude of the three-dimensional signals calculated using the Euclidean norm for the Jerk signal calculated usign the body linear acceleration and angular velocity captured by the accelerometer, frequency domain  |  	Triaxial acceleration normalized and bounded within [-1,1]
+fBodyBodyGyroMag-mean()  |  	Weighted average of the frequency components to obtain a mean frequency of the magnitude of the three-dimensional signals calculated using the Euclidean norm for the Jerk signal calculated usign the body linear acceleration and angular velocity captured by the accelerometer, frequency domain  |  	Triaxial angular velocity normalized and bounded within [-1,1]
+fBodyBodyGyroMag-std()  |  	Standard deviation of the magnitude of the three-dimensional signals calculated using the Euclidean norm for the body signal captured by the gyroscope, frequency domain  |  	Triaxial angular velocity normalized and bounded within [-1,1]
+fBodyBodyGyroMag-meanFreq()  |  	Weighted average of the frequency components to obtain a mean frequency of the magnitude of the three-dimensional signals calculated using the Euclidean norm for the body signal captured by the gyroscope, frequency domain  |  	Triaxial angular velocity normalized and bounded within [-1,1]
+fBodyBodyGyroJerkMag-mean()  |  	Mean of the magnitude of the three-dimensional signals calculated using the Euclidean norm for the Jerk signal calculated usign the body linear acceleration and angular velocity captured by the gyroscope, frequency domain  |  	Triaxial angular velocity normalized and bounded within [-1,1]
+fBodyBodyGyroJerkMag-std()  |  	Standard deviation of the magnitude of the three-dimensional signals calculated using the Euclidean norm for the Jerk signal calculated usign the body linear acceleration and angular velocity captured by the gyroscope, frequency domain  |  	Triaxial angular velocity normalized and bounded within [-1,1]
+fBodyBodyGyroJerkMag-meanFreq()  |  	Weighted average of the frequency components to obtain a mean frequency of the magnitude of the three-dimensional signals calculated using the Euclidean norm for the Jerk signal calculated usign the body linear acceleration and angular velocity captured by the gyroscope, frequency domain  |  	Triaxial angular velocity normalized and bounded within [-1,1]
+angle(tBodyAccMean,gravity)  |  	Mean of the signals in a signal window sample of the mean of the body signal captured by the accelerometer, time domain  |  	Angle between vectors, triaxial acceleration normalized and bounded within [-1,1]
+angle(tBodyAccJerkMean),gravityMean)  |  	Mean of the signals in a signal window sample of the mean of the Jerk signal calculated usign the body linear acceleration and angular velocity captured by the accelerometer, time domain  |  	Angle between vectors, triaxial acceleration normalized and bounded within [-1,1]
+angle(tBodyGyroMean,gravityMean)  |  	Mean of the signals in a signal window sample of the mean of the body signal captured by the gyroscope, time domain  |  	Angle between vectors, triaxial angular velocity normalized and bounded within [-1,1]
+angle(tBodyGyroJerkMean,gravityMean)  |  	Mean of the signals in a signal window sample of the mean of the Jerk signal calculated usign the body linear acceleration and angular velocity captured by the gyroscope, time domain  |  	Angle between vectors, triaxial angular velocity normalized and bounded within [-1,1]
+angle(X,gravityMean)  |  	Mean of the signals in a signal window sample of the X-axis  |  	Angle between vectors
+angle(Y,gravityMean)  |  	Mean of the signals in a signal window sample of the Y-axis  |  	Angle between vectors
+angle(Z,gravityMean)  |  	Mean of the signals in a signal window sample of the Z-axis  |  	Angle between vectors

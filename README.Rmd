@@ -1,0 +1,43 @@
+---
+title: "README"
+author: "Ewerton Monti"
+date: "6 de outubro de 2016"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Introduction
+This repo contains data collected from the accelerometers from the Samsung Galaxy S smartphone. A full description is available at the site where the data was obtained [here](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones).
+
+[Here](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) are the data raw for this project.
+
+Full description of the data can be found [here](http://archive.ics.uci.edu/ml/machine-learning-databases/00240/UCI%20HAR%20Dataset.names).
+
+The run_analysis.R script provided creates a tidy data set with the mean values for each of the 30 subjects of the experiment and six activities. Besides two variables indicating the subject and the activity, there are other 80 variables regarding the average of some of the measures obtained by the accelerometers and other measures calculated by the authors of the original data set. For information about the content of each variable included in the final data set created by the run_analysis.R script, please read the code book provided.
+
+## Explaining the run_analysis.R script
+The script was created aiming to do the following:  
+1. Merges the original sets to create one data set.  
+2. Extracts only the measurements on the mean and standard deviation for each measurement.  
+3. Uses descriptive activity names to name the activities in the data set.  
+4. Appropriately labels the data set with descriptive variable names.  
+5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.  
+
+In **step 1**, the original data is downloaded, unzipped and loaded into R. The two sets with the measurements are merged, along with data for the subjects and the codes for each activity.  
+
+It also added the names for all the columns. The original instruction for the project proposed it would be done in step 4. However, I found it would be more simple to execute steps 2 and 3 having the columns named since step 1, and it makes the script more readable too.
+
+In **step 2** it is created a data set only with the measurements on the mean and standard deviation for each measurement. The project instructions is not clear if we are supposed to include all the variables with mean in the column name or only those with mean at the end. To be conservative, all variable containing mean in the name were included.
+
+In **step 3** the data set receives a column with the names of the six activities. Previously, the activity code of each record in the data set.
+
+As explained in the description of step 1, the functionality required in **step 4** -  
+"Appropriately labels the data set with descriptive variable names" - was written in step 1, in order to simplify and optimize next steps.
+
+Finally, in **step 5** is created the final data set, with the average of each variable for each activity and each subject. The data set is written in the hard drive with the name "final_data_set.txt". It respects the principles of tidy data, as proposed by  [Hadley Wickham](http://hadley.nz/) [here](http://vita.had.co.nz/papers/tidy-data.pdf) or  [here](https://cran.r-project.org/web/packages/tidyr/vignettes/tidy-data.html). 
+
+
+
